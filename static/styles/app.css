@@ -1,0 +1,98 @@
+.main {
+    /* font-size: x-large; */
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    background-color: #292929;
+    color:#9ba5c6;
+}
+.textfield {
+    background-color: #434345 ;
+    color:#c4d0ff;
+}
+.commandentry {
+    background-color: #434345 ;
+    color:#c4d0ff;
+    width: 200%;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #c4d0ff;
+    opacity: 0.6; /* Firefox */
+
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: red;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: red;
+  }
+.button {
+    background-color: #5c5c5d ;
+    color:#c4d0ff;
+    /* color: #EDEDED; */
+}
+.plotframe {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1%;
+}
+.header{
+    background: #606c88; /* Old browsers */
+    background: -moz-linear-gradient(top, #606c88 0%, #3f4c6b 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #606c88 0%,#3f4c6b 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #606c88 0%,#3f4c6b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    display: flex;
+   /* let's align the items so everything is nice and centered */
+    align-items: center;
+    /* justify-content: left; */
+    /* justify-content: space-evenly; */
+    justify-content:space-between;
+}
+.header.a, a:hover, a:visited, a:active {
+    color: #c4d0ff;
+    text-decoration: none;
+   }
+.headertext {
+    color:#c4d0ff;
+    text-decoration: none;
+}
+.headeritem {
+    padding-left: 4em;
+    padding-right: 4em;
+    justify-content:start;
+}
+.bodylist {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    color:#9ba5c6;
+}
+.listitem {
+    padding-left: 4em;
+    padding-right: 4em;
+    justify-content:center;
+}
+.secondheader {
+    background: #606c88;
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    justify-content: space-between;
+}
+head {
+    font-size: x-large;
+    background-color: red;
+}
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(37, 37, 37);
+}
+img {
+    width: 70%;
+    height: auto;
+    /* border-style: groove; */
+}
