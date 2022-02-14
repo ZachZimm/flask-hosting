@@ -7,15 +7,20 @@ import logging
 import json
 from flask import Flask, flash, Response, redirect, request, render_template, url_for
 
-
-# metadata = "Metadata!"
-
+HEADS_TAILS = True
 
 @app.route("/meta/",defaults={'path': ''},methods=["POST","GET"])
 @app.route("/meta/<path:path>",methods=["POST","GET"])
 def meta_route(path):
     path = str(int(path))
     filepath = 'static/sean_meta.json'
+
+    if(HEADS_TAILS):
+        if((int(path) + 2) % 2 == 0):
+            path = "0"
+        else:
+            path = "1"
+
     if(path != ''):
         filepath = 'static/id'+path+'.json'
     else:'static/sean_meta.json'
