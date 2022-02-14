@@ -14,3 +14,10 @@ def sean_route():
 
     # return render_template("img.html", img=sean)
     return send_from_directory('static','sean.jpg')
+
+@app.route("/blackswan/",methods=["POST","GET"])
+def sean_route():
+    # if(request.method == "GET"): return sean
+
+    # return render_template("img.html", img=sean)
+    return send_from_directory('static','black-swan.jpg')
