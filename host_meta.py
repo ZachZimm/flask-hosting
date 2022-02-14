@@ -14,7 +14,7 @@ from flask import Flask, flash, Response, redirect, request, render_template, ur
 @app.route("/meta/",defaults={'path': ''},methods=["POST","GET"])
 @app.route("/meta/<path:path>",methods=["POST","GET"])
 def meta_route(path):
-
+    path = str(int(path))
     filepath = 'static/sean_meta.json'
     if(path != ''):
         filepath = 'static/id'+path+'.json'
