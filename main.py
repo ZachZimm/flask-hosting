@@ -3,9 +3,11 @@ import io
 import random
 import logging
 from flask import Flask, flash, Response, redirect, request, render_template, url_for
+from flask_cors import CORS
 # import riskribbon_strategy_reduced as strategy
 
 app = Flask(__name__)
+CORS(app)
 logging.basicConfig(level=logging.DEBUG)
 
 if __name__ == "__main__":
